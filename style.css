@@ -60,7 +60,7 @@ body{
 .logo{
     font-size:24px;
     font-weight:700;
-    color:#16a34a;
+    color:var(--primary);
     text-decoration:none;
 }
 
