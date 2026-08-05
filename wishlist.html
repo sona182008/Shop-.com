@@ -6,6 +6,12 @@
     <title>Wishlist - Renu General Store</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .wishlist-container { max-width: 800px; margin: 40px auto; padding: 20px; background: #fff; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,.08); }
+        .wishlist-item { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding: 15px 0; }
+        .wishlist-item img { width: 70px; height: 70px; object-fit: cover; border-radius: 8px; }
+        .move-to-cart { background: #ff4757; color: #fff; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 14px; font-weight: bold; }
+    </style>
 </head>
 <body>
 
@@ -17,13 +23,20 @@
         </div>
     </header>
 
-    <!-- Wishlist Content Section -->
-    <section class="products" style="padding-top: 150px; text-align: center;">
-        <div class="section-title">
-            <h2>Aapki Wishlist</h2>
-            <p>Aapne abhi tak koi item wishlist mein nahi joda hai.</p>
+    <!-- Wishlist Section -->
+    <section style="padding-top: 130px; padding-bottom: 50px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Aapki Wishlist</h2>
+                <p>Aapke pasandida items ki list niche hai</p>
+            </div>
+            
+            <div class="wishlist-container">
+                <div id="wishlist-items-list">
+                    <p style="text-align: center; color: #666;">Aapki wishlist filhal khali hai.</p>
+                </div>
+            </div>
         </div>
-        <a href="index.html" class="order-btn">Products Dekhein</a>
     </section>
 
 </body>
