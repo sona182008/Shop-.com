@@ -1,3 +1,15 @@
+:root{
+    --primary:#16a34a;
+    --secondary:#22c55e;
+    --dark:#222222;
+    --light:#ffffff;
+    --bg:#f8f9fa;
+    --shadow:0 8px 20px rgba(0,0,0,.08);
+    --radius:15px;
+    --transition:.3s ease;
+}
+
+
 html{
     scroll-behavior:smooth;
 }
