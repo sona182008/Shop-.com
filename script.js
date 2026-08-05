@@ -62,3 +62,18 @@ if (menuToggle) {
         menu.classList.toggle("active");
     });
 }
+
+// Cart & Wishlist Count Management
+document.addEventListener("DOMContentLoaded", () => {
+    let cartCount = localStorage.getItem("cartCount") || 0;
+    let wishlistCount = localStorage.getItem("wishlistCount") || 0;
+
+    const cartCountEl = document.getElementById("cart-count");
+    const wishlistCountEl = document.getElementById("wishlist-count");
+
+    if (cartCountEl) cartCountEl.textContent = cartCount;
+    if (wishlistCountEl) wishlistCountEl.textContent = wishlistCount;
+});
+
+
+
