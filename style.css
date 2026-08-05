@@ -6,7 +6,7 @@
     --bg:#f8f9fa;
     --shadow:0 8px 20px rgba(0,0,0,.08);
     --radius:15px;
-    --transition:.3s ease;
+    --transition:var(transition);
 }
 
 
@@ -82,7 +82,7 @@ img{
     text-decoration:none;
     color:#333;
     font-weight:600;
-    transition:.3s;
+    transition:var(--transition);
 }
 
 .menu a:hover{
@@ -96,7 +96,8 @@ img{
     padding:10px 20px;
     border-radius:30px;
     font-weight:bold;
-    transition:.3s;
+    transition:var(--transition);
+    
 }
 
 .whatsapp-btn:hover{
@@ -185,7 +186,7 @@ img{
     text-decoration:none;
     color:#fff;
     font-weight:bold;
-    transition:.3s;
+    transition:var(--transition);
 }
 
 .call-btn{
@@ -297,7 +298,8 @@ img{
     border-radius:15px;
     text-align:center;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
-    transition:.3s;
+    transition:var(--transition);
+
 }
 
 .feature-box:hover{
@@ -384,7 +386,7 @@ img{
     color:#fff;
     text-decoration:none;
     margin:0 15px;
-    transition:.3s;
+    transition:var(--transition);
 }
 
 .footer-links a:hover{
@@ -526,7 +528,8 @@ img{
     border-radius:18px;
     text-align:center;
     box-shadow:0 10px 25px rgba(0,0,0,.12);
-    transition:.3s;
+    transition:var(--transition);
+    
 }
 
 .offer-card:hover{
@@ -574,7 +577,7 @@ img{
     padding:30px 20px;
     text-align:center;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
-    transition:.3s;
+    transition:var(--transition);
     cursor:pointer;
     font-size:45px;
 }
@@ -610,7 +613,7 @@ img{
     object-fit:cover;
     border-radius:15px;
     box-shadow:0 8px 20px rgba(0,0,0,.1);
-    transition:.3s;
+    transition:var(--transition);
 }
 
 .gallery-grid img:hover{
@@ -638,7 +641,7 @@ img{
     border-radius:15px;
     text-align:center;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
-    transition:.3s;
+    transition:var(--transition);
 }
 
 .review-card:hover{
