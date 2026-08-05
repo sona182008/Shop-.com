@@ -274,6 +274,33 @@ img{
 }
 
 }
+
+.hero-badges{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin:20px 0;
+}
+
+.hero-badges span{
+    background:rgba(255,255,255,.15);
+    color:#fff;
+    border:1px solid rgba(255,255,255,.25);
+    padding:10px 16px;
+    border-radius:30px;
+    backdrop-filter:blur(8px);
+    font-size:14px;
+    font-weight:600;
+}
+
+@media(max-width:768px){
+    .hero-badges span{
+        font-size:13px;
+        padding:8px 12px;
+    }
+}
+
 /* ==========================
    PRODUCTS
 ========================== */
