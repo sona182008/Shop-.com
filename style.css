@@ -919,4 +919,18 @@ img{
         margin-left:12px;
     }
 }
+.shop-btn{
+    background:#f59e0b;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    transition:var(--transition);
+}
 
+.shop-btn:hover{
+    background:#d97706;
+    transform:translateY(-4px);
+    box-shadow:0 12px 25px rgba(0,0,0,.20);
+}
