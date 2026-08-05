@@ -44,11 +44,13 @@ img{
     top:0;
     left:0;
     width:100%;
-    background:#ffffff;
-    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
     z-index:999;
+    transition:var(--transition);
 }
-
 .container{
     width:min(92%,1200px);
     margin:0 auto;
