@@ -249,6 +249,17 @@ img{
 
 .call-btn:hover,
 .wa-btn:hover{
+    transform:translateY(-4px) scale(1.05);
+    box-shadow:0 12px 25px rgba(0,0,0,.20);
+}
+
+.call-btn:active,
+.wa-btn:active{
+    transform:scale(0.96);
+}
+
+.call-btn:hover,
+.wa-btn:hover{
     transform:translateY(-4px);
 }
 
