@@ -691,5 +691,51 @@ img{
 }
 
 
+@media (max-width: 768px) {
+    body {
+        padding-top: 130px !important; /* Do lines ke liye upar jagah banane ke liye */
+    }
+
+    .nav {
+        height: auto !important;
+        flex-direction: column; /* Saare items ko ek ke niche ek laane ke liye */
+        align-items: center;
+        padding: 10px;
+        gap: 12px;
+    }
+
+    /* Pehli line: Sirf Logo ke liye */
+    .logo {
+        font-size: 22px;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Dusri line: Menu, Cart, Search, aur baaki buttons ke liye */
+    .menu {
+        display: none; /* Mobile par main menu hide rahega, toggle se chalega */
+    }
+
+    .whatsapp-btn {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Buttons row jo logo ke niche aayegi */
+    .header .container.nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Ek line mein buttons ko adjust karne ke liye */
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 
 
