@@ -5,7 +5,7 @@
     --light:#ffffff;
     --bg:#f8f9fa;
     --shadow:0 8px 20px rgba(0,0,0,.08);
-    --radius:15px;
+    --border-radius:var(--radius);
     --transition:var(transition);
 }
 
@@ -245,7 +245,7 @@ img{
 
 .product-card{
     background:#fff;
-    border-radius:15px;
+    border-radius:var(--radius);
     overflow:hidden;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
     transition:.3s;
