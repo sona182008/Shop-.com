@@ -691,29 +691,30 @@ img{
 }
 
 
+
+
 @media (max-width: 768px) {
     body {
-        padding-top: 130px !important; /* Do lines ke liye upar jagah banane ke liye */
+        padding-top: 120px !important;
     }
 
     .nav {
         height: auto !important;
-        flex-direction: column; /* Saare items ko ek ke niche ek laane ke liye */
-        align-items: center;
-        padding: 10px;
-        gap: 12px;
+        flex-direction: column;
+        padding: 8px 10px;
+        gap: 8px;
     }
 
-    /* Pehli line: Sirf Logo ke liye */
+    /* Pehli line mein sirf Logo */
     .logo {
-        font-size: 22px;
+        font-size: 20px;
         text-align: center;
         width: 100%;
+        margin-bottom: 2px;
     }
 
-    /* Dusri line: Menu, Cart, Search, aur baaki buttons ke liye */
     .menu {
-        display: none; /* Mobile par main menu hide rahega, toggle se chalega */
+        display: none;
     }
 
     .whatsapp-btn {
@@ -724,18 +725,42 @@ img{
         display: block;
     }
 
-    /* Buttons row jo logo ke niche aayegi */
+    /* Dusri line mein saare buttons ek sath bagal-bagal aayein */
     .header .container.nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
     }
 
-    /* Ek line mein buttons ko adjust karne ke liye */
-    .nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    /* Sabhi action buttons ka size compact aur ek jaisa ho */
+    .cart-btn,
+    .search-btn,
+    .wishlist-btn,
+    .login-btn,
+    .profile-btn,
+    .menu-toggle {
+        padding: 6px 10px;
+        font-size: 14px;
+        background: #fff;
+        border: 1px solid var(--primary);
+        border-radius: 50px;
+        margin: 2px;
+    }
+
+    .login-btn span {
+        display: none; /* Mobile par Login text hide rahega, sirf icon dikhega */
+    }
+
+    #cart-count,
+    #wishlist-count {
+        position: absolute;
+        margin-top: -12px;
+        margin-left: 10px;
     }
 }
 
+
+        
 
