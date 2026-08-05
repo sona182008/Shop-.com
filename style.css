@@ -4,11 +4,13 @@
     --dark:#222222;
     --light:#ffffff;
     --bg:#f8f9fa;
+
+    --radius:16px;
+    --transition:0.3s ease;
+
     --shadow:0 8px 20px rgba(0,0,0,.08);
     --border-radius:var(--radius);
-    --transition:var(transition);
 }
-
 
 html{
     scroll-behavior:smooth;
