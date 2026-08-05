@@ -6,6 +6,12 @@
     <title>Login - Renu General Store</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .auth-container { max-width: 400px; margin: 40px auto; padding: 30px; background: #fff; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,.08); text-align: center; }
+        .auth-input { width: 100%; padding: 12px 15px; margin: 15px 0; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; outline: none; }
+        .auth-btn { width: 100%; background: #ff4757; color: #fff; padding: 12px; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background 0.3s; }
+        .auth-btn:hover { background: #e84118; }
+    </style>
 </head>
 <body>
 
@@ -17,15 +23,20 @@
         </div>
     </header>
 
-    <!-- Login Form Section -->
-    <section class="products" style="padding-top: 150px; text-align: center;">
-        <div class="section-title">
-            <h2>Login Karein</h2>
-            <p>Apna mobile number daal kar login karein.</p>
-        </div>
-        <div style="max-width: 400px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,.08);">
-            <input type="tel" placeholder="Mobile Number" style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 8px;">
-            <a href="index.html" class="order-btn" style="display: block; width: 100%;">OTP Bhejein</a>
+    <!-- Login Section -->
+    <section style="padding-top: 130px; padding-bottom: 50px;">
+        <div class="container">
+            <div class="auth-container">
+                <div class="section-title" style="margin-bottom: 20px;">
+                    <h2>Login / Signup</h2>
+                    <p>Apna mobile number darj karein</p>
+                </div>
+                
+                <form id="login-form">
+                    <input type="tel" id="mobile-number" class="auth-input" placeholder="Mobile Number (10 digits)" maxlength="10" required>
+                    <button type="submit" class="auth-btn">OTP Bhejein</button>
+                </form>
+            </div>
         </div>
     </section>
 
