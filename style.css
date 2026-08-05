@@ -29,7 +29,7 @@ html{
 body{
     background:var(--bg);
     color:var(--dark);
-    padding-top:70px;
+    padding-top:90px;
     padding-bottom:80px;
     overflow-x:hidden;
     line-height:1.6;
@@ -154,27 +154,29 @@ img{
     justify-content:center;
 }
 
-
 @media(max-width:768px){
 
     .nav{
-        flex-direction:column;
-        height:auto;
-        padding:15px 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        padding: 0 10px;
     }
 
     .menu{
-        margin:15px 0;
-        gap:15px;
-        flex-wrap:wrap;
-        justify-content:center;
+        margin: 15px 0;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .whatsapp-btn{
-        width:100%;
-        text-align:center;
+        display: none;
     }
 }
+
+
 /* ==========================
    HERO SECTION
 ========================== */
